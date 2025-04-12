@@ -1,0 +1,30 @@
+{
+  "name": "api_challenges",
+  "version": "1.0.0",
+  "description": "api tests for service apichallenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "testui": "npx playwright test --ui",
+    "reportAwesome": "npx allure awesome ./allure-results --single-file",
+    "reportClassic": "npx allure classic ./allure-results --single-file"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-prettier": "^10.1.1",
+    "playwright": "^1.51.0",
+    "prettier": "^3.5.3",
+    "uuid": "^11.1.0",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@faker-js/faker": "^9.6.0",
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
+    "globals": "^16.0.0"
+  }
+}
