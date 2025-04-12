@@ -5,10 +5,6 @@ test.use({ storageState: { cookies: [], origins: [] } });
 
 let challengerService, progressData;
 
-/* const apiReq = await request.newContext({
-            baseUrl: URL,
-        }); */
-
 test.describe('API challenges', () => {
     let token;
 
@@ -17,9 +13,6 @@ test.describe('API challenges', () => {
         const response = await challengerService.post();
         token = response.headers()["x-challenger"];
         
-        //expect(response.status()).toBe(201);
-        //console.log('Это токен '+token); //токен для контроля прогресса
-
     });
     
     test("ID 02 GET /challenges @API_pozitive", async ({ request }) => {
@@ -431,7 +424,6 @@ test.describe('API challenges', () => {
       });
 
       test("ID 35 PUT /challenger/guid RESTORE @API_pozitive", async ({ request }) => {
-        //const guid = 'e54775c4-0653-4f07-a0c5-86a9b40603d8';
         
        const challengerService = new ChallengerService(request);
         let response = await challengerService.get(token, token);
@@ -451,8 +443,7 @@ test.describe('API challenges', () => {
         
         const progress = generationProgress(progressData, newguid);
         response = await challengerService.put(newguid, newguid, progress);
-        //console.log(`сгенеренный гуид ${newguid}`)
-                       
+                      
         expect(response.status()).toBe(201);
         expect(response.headers()).toEqual(expect.objectContaining({ "x-challenger": newguid }));
         
