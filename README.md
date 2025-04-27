@@ -1,6 +1,6 @@
 ## Часть II Дипломной работы по итогам прохождения курса 
 ## [QA.GURU | Автоматизация тестирования JS + Playwright](https://qa.guru/playwright_js)
-
+---
 
 ## Репозиторий API автотестов для сервиса [API Challenges](https://apichallenges.herokuapp.com/)
 ---
@@ -113,24 +113,24 @@ npm run reportOpen
 ---
 ## Пример [Allure отчета]()
 
-
+<img src="./images/allure.png" alt="allure" width="1100" height="400"/>
 
 ---
-## Запуск в [Jenkins](https://jenkins.autotests.cloud/job/002-pw-js_Grish/)
+## Запуск в [Jenkins](https://jenkins.autotests.cloud/job/002-pw-js_grish_apichallenges/)
 
-Для запуска выполнения тестов необходимо авторизоваться на сайте [Jenkins](https://jenkins.autotests.cloud/login?from=%2F), перейти в нужную [джобу](https://jenkins.autotests.cloud/job/002-pw-js_Grish/) и нажать <code>Build Now</code>. 
+Для запуска выполнения тестов необходимо авторизоваться на сайте [Jenkins](https://jenkins.autotests.cloud/login?from=%2F), перейти в нужную [джобу](https://jenkins.autotests.cloud/job/002-pw-js_grish_apichallenges/) и нажать <code>Build Now</code>. 
 После завершения паплайна будет сформирован Allure-отчет, результаты выполнения будут отправлены в AllureTestOps и в Telegram. 
 
-
+<img src="./images/jenkins.png" alt="jenkins" width="1100" height="400"/>
 
 ---
 ## Интеграция с [AllureTestOps](https://allure.autotests.cloud/project/4731/dashboards)
 
-
+<img src="./images/testops.png" alt="testops" width="1100" height="400"/>
 
 ---
 ## Уведомление в Telegram
 
 После завершения выполнения тестов бот, созданный в Telegram, автоматически обрабатывает данные и отправляет сообщение с отчетом о результате тестирования в чат.
 
-
+<img src="./images/telegram.png" alt="telegram" width="400" height="400"/>
