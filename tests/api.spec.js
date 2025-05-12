@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { App } from '../src/services/app.service';
-import { TodoBuilder, payloadToXml, generationGuid, generationProgress } from '../src/helper/index';
-test.use({ storageState: { cookies: [], origins: [] } });
+import { TodoBuilder, payloadToXml, generationGuid, generationProgress } from '../src/helpers/index';
 
 let progressData;
 
